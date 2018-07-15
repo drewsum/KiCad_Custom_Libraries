@@ -447,6 +447,12 @@ $CMP DS1307
 D RTC Chip
 $ENDCMP
 #
+$CMP DS1683
+D Total-Elapsed-Time and Event Recorder with Alarm
+K elapsed time counter
+F https://datasheets.maximintegrated.com/en/ds/DS1683.pdf
+$ENDCMP
+#
 $CMP D_Schottky_Custom
 D Schottky diode
 K diode Schottky
