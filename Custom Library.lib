@@ -1521,7 +1521,7 @@ F0 "C" 25 100 50 H V L CNN
 F1 "CP1_Alum_Custom" 25 -100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 25 100 50 H I C CNN
-F4 "Foot" -150 -100 50 H V R CNN "display_foot"
+F4 "Foot" -150 -100 50 H V R CNN "display_footprint"
 F5 "V" -150 100 50 H V R CNN "Voltage"
 $FPLIST
  CP_*
