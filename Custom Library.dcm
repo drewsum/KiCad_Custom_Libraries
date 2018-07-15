@@ -483,6 +483,11 @@ K BC516 PNP Darlington Darl Transistor
 F http://www.fairchildsemi.com/ds/BC/BC516.pdf
 $ENDCMP
 #
+$CMP FT234XD
+D Basic UART USB Bridge
+F http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT234XD.pdf
+$ENDCMP
+#
 $CMP GND_ISO
 D GROUND power-flag symbol
 K Power Flag Symbol
