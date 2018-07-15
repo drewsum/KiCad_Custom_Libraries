@@ -127,36 +127,6 @@ $CMP 5011AS
 D Amazon 7 Segment Display Common Cathode
 $ENDCMP
 #
-$CMP 74AHC1G08
-D Single AND Gate, Low-Voltage CMOS
-K Single Gate AND LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
-$CMP 74AHCT1G08
-D Single AND Gate, Low-Voltage CMOS
-K Single Gate AND LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
-$CMP 74AUC1G08
-D Single AND Gate, Low-Voltage CMOS
-K Single Gate AND LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
-$CMP 74AUC2G06
-D Dual NOT Gate w/ Open Drain, Low-Voltage CMOS
-K Dual Gate NOT Open Drain LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
-$CMP 74AUP1G08
-D Single AND Gate, Low-Voltage CMOS
-K Single Gate AND LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
 $CMP 74HC151
 D Multiplexer 8 to 1
 K CMOS MUX8
@@ -193,25 +163,31 @@ D 8 bits serial in // out Shift Register Open Collect.
 K HCMOS SR OpenCol
 $ENDCMP
 #
-$CMP 74LVC1G08_c
+$CMP 74LVC1G08_Power
 D Single AND Gate, Low-Voltage CMOS
 K Single Gate AND LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
-$CMP 74LVC1G38_Custom
+$CMP 74LVC1G38_Power
 D Single NAND Gate Open Drain, Low-Voltage CMOS
 K Single Gate NAND Open Drain LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
-$CMP 74LVC2G06_c
+$CMP 74LVC1G86_Power
+D Single EX-OR Gate, Low-Voltage CMOS
+K Single Gate EX-OR LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC2G06_Power
 D Dual NOT Gate w/ Open Drain, Low-Voltage CMOS
 K Dual Gate NOT Open Drain LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
-$CMP 74LVC2G74_c
+$CMP 74LVC2G74_Power
 D 74AUC1G74, Single D Flip-Flop, Low-Voltage CMOS
 K Single D Flip-Flop D CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
