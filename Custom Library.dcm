@@ -1040,6 +1040,11 @@ $CMP VFF
 K POWER, PWR
 $ENDCMP
 #
+$CMP VHU
+D power-flag symbol (holdup voltage)
+K Power Flag Symbol Holdup
+$ENDCMP
+#
 $CMP VIO
 D positive voltage power-flag symbol
 K Power Flag Symbol
