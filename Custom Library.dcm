@@ -169,6 +169,12 @@ K Single Gate AND LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
+$CMP 74LVC1G240_Power
+D Single Buffer/Driver Gate Tri-State, Low-Voltage CMOS
+K Single Gate Buff/Drv Tri-State LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74LVC1G38_Power
 D Single NAND Gate Open Drain, Low-Voltage CMOS
 K Single Gate NAND Open Drain LVC CMOS
