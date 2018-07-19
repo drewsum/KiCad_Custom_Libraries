@@ -127,6 +127,18 @@ $CMP 5011AS
 D Amazon 7 Segment Display Common Cathode
 $ENDCMP
 #
+$CMP 74AUC1G79
+D Single D Flip-Flop, Low-Voltage CMOS
+K Single D Flip-Flop D CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUP1G79
+D Single D Flip-Flop, Low-Voltage CMOS
+K Single D Flip-Flop D CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74HC151
 D Multiplexer 8 to 1
 K CMOS MUX8
@@ -169,6 +181,12 @@ K Single Gate AND LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
+$CMP 74LVC1G17_Power
+D Single Schmitt Buffer Gate, Low-Voltage CMOS
+K Single Gate Buff Schmitt LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74LVC1G240_Power
 D Single Buffer/Driver Gate Tri-State, Low-Voltage CMOS
 K Single Gate Buff/Drv Tri-State LVC CMOS
@@ -181,6 +199,12 @@ K Single Gate NAND Open Drain LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
+$CMP 74LVC1G79_Power
+D Single D Flip-Flop, Low-Voltage CMOS
+K Single D Flip-Flop D CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74LVC1G86_Power
 D Single EX-OR Gate, Low-Voltage CMOS
 K Single Gate EX-OR LVC CMOS
@@ -190,6 +214,12 @@ $ENDCMP
 $CMP 74LVC2G06_Power
 D Dual NOT Gate w/ Open Drain, Low-Voltage CMOS
 K Dual Gate NOT Open Drain LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC2G14_Power
+D Dual NOT Gate Schmitt Triggered, Low-Voltage CMOS
+K Dual Gate NOT Schmitt LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
