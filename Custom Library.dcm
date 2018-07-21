@@ -103,6 +103,12 @@ D Small Signal Mosfet N Channel
 K N-Channel MOSFET
 $ENDCMP
 #
+$CMP 2N7002
+D 0.115A Id, 60V Vds, N-channel MOSFET, SOT-23
+K N-Channel Switching MOSFET
+F https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf
+$ENDCMP
+#
 $CMP 4026
 D Decade Counters/Dividers
 $ENDCMP
@@ -758,6 +764,11 @@ D 1.8A, 4MHz, Synchronous Step-Down DC/DC Conveter
 K LT Switch Linear
 $ENDCMP
 #
+$CMP LTC3833_UDC
+D Fast Accurate Step-Down DC/DC Controller with Differential Output Sensing
+F http://www.analog.com/media/en/technical-documentation/data-sheets/3833f.pdf
+$ENDCMP
+#
 $CMP LTC4413DD
 D Dual 2.6A, 2.5V to 5.5V Ideal Diodes in 3mmx3mm DFN
 $ENDCMP
@@ -845,6 +856,12 @@ $ENDCMP
 #
 $CMP MCP809
 D 3 Pin Supply Voltage Supervisor
+$ENDCMP
+#
+$CMP MMBF170
+D 60V Vds, 0.5 A Id, N-channel MOSFET, SOT-23
+K N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/ds30104.pdf
 $ENDCMP
 #
 $CMP MOC3033M
@@ -971,6 +988,12 @@ $ENDCMP
 #
 $CMP Si3932DV
 D Dual N channel MOSFET 30VDS 3.7A
+$ENDCMP
+#
+$CMP SiR836DP
+D 40V Vds, 021A Id, N-channel MOSFET, PowerPAK SO-8
+K N-Channel MOSFET
+F http://www.vishay.com/docs/65543/sir836dp.pdf
 $ENDCMP
 #
 $CMP TCN75A
