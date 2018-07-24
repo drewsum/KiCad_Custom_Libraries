@@ -434,6 +434,12 @@ D 8 bit Micro, Atmel
 K ATtiny, tiny, ATtiny85, AT
 $ENDCMP
 #
+$CMP BSC032N04LSATMA1
+D 40V Vds, 21A Id, N-channel MOSFET, TDSON-8
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-BSC032N04LS-DS-v02_00-en.pdf?fileId=db3a304342371bb001424bc4f341701d
+$ENDCMP
+#
 $CMP BT138-800G
 D TRIAC, BTA series pinout
 K TRIAC
