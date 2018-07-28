@@ -465,6 +465,11 @@ D BCD to 7 segments Driver, Open Collect, 30V outputs
 K TTL DECOD DECOD7 OpenCol
 $ENDCMP
 #
+$CMP CDCS503
+D Clock Buffer with Optional SSC
+F http://www.ti.com/lit/ds/symlink/cdcs503.pdf
+$ENDCMP
+#
 $CMP CLVBA-FKA
 D Cree RGB LED PLCC4
 K RGB LED
