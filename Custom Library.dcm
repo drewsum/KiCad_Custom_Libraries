@@ -717,6 +717,10 @@ D Step-Up/Step-Down Switched Capacitor DC/DC Converters with Reset
 K Charge Pump
 $ENDCMP
 #
+$CMP LT8643S
+D 42V 6A Synchronous Step-Down Silent Switcher 2 with 2.5uA Quiescent Current
+$ENDCMP
+#
 $CMP LTC2601
 D 16 Bit Rail-to-Rail DAC in 10-Lead DFN
 $ENDCMP
