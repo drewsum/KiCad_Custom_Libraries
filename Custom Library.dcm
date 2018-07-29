@@ -687,6 +687,7 @@ $ENDCMP
 #
 $CMP LT3757
 D Boost, Flyback, SEPIC and Inverting Controller
+F http://www.analog.com/media/en/technical-documentation/data-sheets/3757Afe.pdf
 $ENDCMP
 #
 $CMP LT3798
