@@ -16,6 +16,10 @@ $CMP +12VAC
 K POWER, PWR
 $ENDCMP
 #
+$CMP +12Vin
+K POWER, PWR
+$ENDCMP
+#
 $CMP +170
 K POWER, PWR
 $ENDCMP
@@ -38,6 +42,16 @@ $ENDCMP
 #
 $CMP +3V3_ALS
 D power-flag symbol +3.3V
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP +5.5V
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP +5.5V_MNG
+D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
@@ -813,6 +827,12 @@ D Fast Accurate Step-Down DC/DC Controller with Differential Output Sensing
 F http://www.analog.com/media/en/technical-documentation/data-sheets/3833f.pdf
 $ENDCMP
 #
+$CMP LTC4365DDB
+D Overvoltage, Undervoltage and Reverse Supply Protection Controller, 3x2mm DFN-8 package, 50Hz/60Hz noise rejection
+K overvoltage undervoltage reverse-polarity protection
+F http://cds.linear.com/docs/en/datasheet/4365fa.pdf
+$ENDCMP
+#
 $CMP LTC4413DD
 D Dual 2.6A, 2.5V to 5.5V Ideal Diodes in 3mmx3mm DFN
 $ENDCMP
@@ -1048,6 +1068,11 @@ $ENDCMP
 #
 $CMP Si3932DV
 D Dual N channel MOSFET 30VDS 3.7A
+$ENDCMP
+#
+$CMP SiC779
+D Integrated DrMOS Power Stage, 40A, 12VIN, PowerPAK MLP 6mm x 6mm 40
+F http://www.vishay.com/docs/67538/sic779.pdf
 $ENDCMP
 #
 $CMP SiR836DP
