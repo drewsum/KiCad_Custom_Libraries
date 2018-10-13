@@ -28,10 +28,6 @@ $CMP +180
 K POWER, PWR
 $ENDCMP
 #
-$CMP +1V2
-K POWER, PWR
-$ENDCMP
-#
 $CMP +24Vin
 K POWER, PWR
 $ENDCMP
@@ -714,6 +710,11 @@ $ENDCMP
 #
 $CMP LT1010
 D High speed analog Buffer
+K Buffer
+$ENDCMP
+#
+$CMP LT1010DD
+D High speed analog Buffer, DFN8
 K Buffer
 $ENDCMP
 #
