@@ -993,6 +993,11 @@ K PIC
 F http://ww1.microchip.com/downloads/en/DeviceDoc/PIC18(L)F67K40%20Data%20Sheet%2040001841D.pdf
 $ENDCMP
 #
+$CMP PIC18(L)F27K40T-I_ML
+D PIC18(L)F 8 bit Microcontroller, High Performance, 64 MHz, 128k FLASH, 3k SRAM, 1k EEPROM, QFN-28
+F http://ww1.microchip.com/downloads/en/DeviceDoc/PIC18LF27_47K40-Data-Sheet-40001844E.pdf
+$ENDCMP
+#
 $CMP PIC18F2221
 D Enhanced Flash Microcontrollers with 10-Bit A/D and nanoWatt Technology
 $ENDCMP
