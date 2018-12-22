@@ -958,6 +958,11 @@ $CMP NRF24L01
 D NRF24L01, 2.4GHz Radio Transceiver
 $ENDCMP
 #
+$CMP NXQ1TXH5_101J
+D One-chip 5V Qi Wireless TRansmitter, QFN-32
+F https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/NXQ1TXH5.pdf
+$ENDCMP
+#
 $CMP Nut
 D Hardware, Standoff
 $ENDCMP
