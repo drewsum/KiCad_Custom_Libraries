@@ -4,7 +4,7 @@ $CMP +0.825V_REF
 K POWER, PWR
 $ENDCMP
 #
-$CMP +1.2
+$CMP +1.2V_VFF
 K POWER, PWR
 $ENDCMP
 #
@@ -32,8 +32,22 @@ $CMP +24Vin
 K POWER, PWR
 $ENDCMP
 #
+$CMP +3.3V
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP +3.3V_BCKP
+K POWER, PWR
+$ENDCMP
+#
 $CMP +3.3V_MNG
 K POWER, PWR
+$ENDCMP
+#
+$CMP +3.3V_SW
+D Power flag
+K power-flag
 $ENDCMP
 #
 $CMP +3V3_ALS
@@ -82,6 +96,10 @@ K Power Flag Symbol
 $ENDCMP
 #
 $CMP +6.7V
+K POWER, PWR
+$ENDCMP
+#
+$CMP +60V_VAN
 K POWER, PWR
 $ENDCMP
 #
@@ -151,9 +169,33 @@ $CMP 5011AS
 D Amazon 7 Segment Display Common Cathode
 $ENDCMP
 #
+$CMP 74AHC1G125
+D Single Buffer Gate Tri-State, Low-Voltage CMOS
+K Single Gate Buff Tri-State LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AHCT1G125
+D Single Buffer Gate Tri-State, Low-Voltage CMOS
+K Single Gate Buff Tri-State LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUC1G125
+D Single Buffer Gate Tri-State, Low-Voltage CMOS
+K Single Gate Buff Tri-State LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74AUC1G79
 D Single D Flip-Flop, Low-Voltage CMOS
 K Single D Flip-Flop D CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUP1G125
+D Single Buffer Gate Tri-State, Low-Voltage CMOS
+K Single Gate Buff Tri-State LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
@@ -161,6 +203,12 @@ $CMP 74AUP1G79
 D Single D Flip-Flop, Low-Voltage CMOS
 K Single D Flip-Flop D CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74HC138
+D Decoder 3 to 8 active low outputs
+K TTL DECOD DECOD8
+F https://www.diodes.com/assets/Datasheets/74HC138.pdf
 $ENDCMP
 #
 $CMP 74HC151
@@ -229,6 +277,12 @@ K Single Mono Multivibrator CMOS
 F http://www.ti.com/lit/ds/symlink/sn74lvc1g123.pdf
 $ENDCMP
 #
+$CMP 74LVC1G125_Power
+D Single Buffer Gate Tri-State, Low-Voltage CMOS
+K Single Gate Buff Tri-State LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74LVC1G14_Power
 D Single Schmitt NOT Gate, Low-Voltage CMOS, SC-70-5
 K Single Gate NOT Schmitt LVC CMOS
@@ -286,6 +340,12 @@ $ENDCMP
 $CMP 74LVC2G74_Power
 D 74AUC1G74, Single D Flip-Flop, Low-Voltage CMOS
 K Single D Flip-Flop D CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC3G06_Power
+D Triple NOT Gate w/ Open Drain, Low-Voltage CMOS
+K Triple Gate NOT Open Drain LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
@@ -488,6 +548,11 @@ D 8 bit Micro, Atmel
 K ATtiny, tiny, ATtiny85, AT
 $ENDCMP
 #
+$CMP BSC026NE2LS5ATMA1
+D 24A Id, 25V Vds
+F https://www.infineon.com/dgdl/Infineon-BSC026NE2LS5-DS-v02_00-EN.pdf?fileId=5546d4624bcaebcf014c0950eede22f3
+$ENDCMP
+#
 $CMP BSC032N04LSATMA1
 D 40V Vds, 21A Id, N-channel MOSFET, TDSON-8
 K N-Channel MOSFET
@@ -626,7 +691,7 @@ $ENDCMP
 $CMP IPC100N04S51R7ATMA1
 D 25A Id, 30V Vds, NexFET N-Channel Power MOSFET, 6.9mOhm Ron, Qg (typ) 7.9nC, SON8 5x6mm
 K NexFET Power MOSFET N-MOS
-F http://www.ti.com/lit/gpn/csd17578q5a
+F https://www.infineon.com/dgdl/Infineon-IPC100N04S5-1R7-DS-v01_02-EN.pdf?fileId=5546d46253f65057015419c2835252f3
 $ENDCMP
 #
 $CMP IRFP9240PBF
@@ -783,6 +848,11 @@ D Micropower, Low Voltage, Dual Comparator with 400mV Reference
 F http://www.analog.com/media/en/technical-documentation/data-sheets/6700123fh.pdf
 $ENDCMP
 #
+$CMP LT8606DC
+D 42V, 350mA Synchronous Step-Down Regulator with 2.5uA Quiescent Current
+F https://www.analog.com/media/en/technical-documentation/data-sheets/LT8606-8606B.pdf
+$ENDCMP
+#
 $CMP LT8620-MSE
 D Step-Up/Step-Down Switched Capacitor DC/DC Converters with Reset
 K Charge Pump
@@ -857,9 +927,24 @@ D 1.8A, 4MHz, Synchronous Step-Down DC/DC Conveter
 K LT Switch Linear
 $ENDCMP
 #
+$CMP LTC3605A_UF
+D 20V, 5A Synchronous Step-Down Regulator, QFN-24
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3605afg.pdf
+$ENDCMP
+#
+$CMP LTC3624DD
+D 17V, 2A Synchronous Step-Down Regulator with 3.5uA Quiescent Current
+F https://www.analog.com/media/en/technical-documentation/data-sheets/36242fd.pdf
+$ENDCMP
+#
 $CMP LTC3833_UDC
 D Fast Accurate Step-Down DC/DC Controller with Differential Output Sensing
 F http://www.analog.com/media/en/technical-documentation/data-sheets/3833f.pdf
+$ENDCMP
+#
+$CMP LTC4041UFD
+D 2.5A Supercapacitor Backup Power Manager
+F https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4041.pdf
 $ENDCMP
 #
 $CMP LTC4365DDB
@@ -1041,6 +1126,23 @@ $CMP PIC18F2221
 D Enhanced Flash Microcontrollers with 10-Bit A/D and nanoWatt Technology
 $ENDCMP
 #
+$CMP PIC32MZ2048EFG100_IPT
+D 32-bit MCUs, 2 MB Flash, 512 KB SRAM, with FPU, Audio and Graphics Interfaces, HS USB, Ethernet, and Advanced Analog
+K PIC32 PIC32MZ PIC 32 bit
+F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
+$ENDCMP
+#
+$CMP PIC32MZ2048EFH100_IPF
+D 32-bit MCUs, 2 MB Flash, 512 KB SRAM, with FPU, Audio and Graphics Interfaces, HS USB, Ethernet, and Advanced Analog
+K PIC32 PIC32MZ PIC 32 bit
+F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
+$ENDCMP
+#
+$CMP PIC32MZ2048EFH144_IPL
+D PIC32MZ 32 bit Micro, 2048KB Flash, 512k SRAM, TQFP-144
+F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320D.pdf
+$ENDCMP
+#
 $CMP POT_Sw
 D Potentiometer
 K resistor variable
@@ -1199,6 +1301,23 @@ K ideal-diode or-ing undervoltage overvoltage
 F http://www.ti.com/lit/ds/symlink/tps2410.pdf
 $ENDCMP
 #
+$CMP TPS25942A
+D 2.7 V-18 V, 5-A eFuse Power MUX With Multiple Protection Modes, Current Limiter, Auto-Retry
+F http://www.ti.com/lit/ds/symlink/tps25944l.pdf
+$ENDCMP
+#
+$CMP TPS25942L
+D 2.7 V-18 V, 5-A eFuse Power MUX With Multiple Protection Modes, Current Limiter, Latched
+$ENDCMP
+#
+$CMP TPS25944A
+D 2.7 V-18 V, 5-A eFuse Power MUX With Multiple Protection Modes, Circuit Breaker, Auto-Retry
+$ENDCMP
+#
+$CMP TPS25944L
+D 2.7 V-18 V, 5-A eFuse Power MUX With Multiple Protection Modes, Circuit Breaker, Latched
+$ENDCMP
+#
 $CMP TPS61230DRC
 D High Efficiency Synchronous Step Up Converters with 5-A Switches
 K Boost, Step Up, DC/DC,
@@ -1254,6 +1373,11 @@ K Power Flag Symbol
 $ENDCMP
 #
 $CMP VTANK
+D power-flag symbol (holdup voltage)
+K Power Flag Symbol Holdup
+$ENDCMP
+#
+$CMP VTANK_OR
 D power-flag symbol (holdup voltage)
 K Power Flag Symbol Holdup
 $ENDCMP
