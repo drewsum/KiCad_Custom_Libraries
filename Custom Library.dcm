@@ -4,7 +4,7 @@ $CMP +0.825V_REF
 K POWER, PWR
 $ENDCMP
 #
-$CMP +1.2V_VFF
+$CMP +1.2VFF
 K POWER, PWR
 $ENDCMP
 #
@@ -20,6 +20,10 @@ $CMP +12Vin
 K POWER, PWR
 $ENDCMP
 #
+$CMP +12VinP
+K POWER, PWR
+$ENDCMP
+#
 $CMP +170
 K POWER, PWR
 $ENDCMP
@@ -30,11 +34,6 @@ $ENDCMP
 #
 $CMP +24Vin
 K POWER, PWR
-$ENDCMP
-#
-$CMP +3.3V
-D Power flag
-K power-flag
 $ENDCMP
 #
 $CMP +3.3V_BCKP
@@ -99,13 +98,8 @@ $CMP +6.7V
 K POWER, PWR
 $ENDCMP
 #
-$CMP +60V_VAN
+$CMP +60VAN
 K POWER, PWR
-$ENDCMP
-#
-$CMP +60Van
-D power-flag symbol
-K Power Flag Symbol
 $ENDCMP
 #
 $CMP +9V_BATT
@@ -221,6 +215,12 @@ D Decoder 3 to 8
 K HC DECOD DECOD8
 $ENDCMP
 #
+$CMP 74HC4040
+D Binary Counter 12 stages (Asynchronous)
+K CMOS CNT CNT12
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT4040.pdf
+$ENDCMP
+#
 $CMP 74HC4511
 D BCD to 7 segments Driver
 K HC DECOD DECOD7
@@ -266,6 +266,12 @@ F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
 $CMP 74LVC1G08_Power
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC1G08_SON6
 D Single AND Gate, Low-Voltage CMOS
 K Single Gate AND LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
@@ -319,6 +325,12 @@ K Single D Flip-Flop D CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
+$CMP 74LVC1G80_Power
+D Single D Flip-Flop Iverted Output, Low-Voltage CMOS
+K Single D Flip-Flop CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74LVC1G86_Power
 D Single EX-OR Gate, Low-Voltage CMOS
 K Single Gate EX-OR LVC CMOS
@@ -347,6 +359,12 @@ $CMP 74LVC3G06_Power
 D Triple NOT Gate w/ Open Drain, Low-Voltage CMOS
 K Triple Gate NOT Open Drain LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74VHC541
+D 8-bit Buffer/Line Driver 3-state outputs
+K TTL BUFFER 3State BUS
+F https://assets.nexperia.com/documents/data-sheet/74VHC_VHCT541.pdf
 $ENDCMP
 #
 $CMP A1101LLHL
@@ -639,7 +657,7 @@ D 4 Bit Dip Switch
 $ENDCMP
 #
 $CMP ECS-327KE
-D SMD CLOCK OSCILLATOR
+D Clock Oscillator CMOS Enable
 $ENDCMP
 #
 $CMP FAN5602MP5X
@@ -686,6 +704,11 @@ $ENDCMP
 #
 $CMP ICS502
 D LOCO PLL CLOCK MULTIPLIER
+$ENDCMP
+#
+$CMP INA231A
+D High- or Low-Side Measurement, Bidirectional Current and Power Monitor With 1.8-V I2C Interface
+F http://www.ti.com/lit/ds/symlink/ina231.pdf
 $ENDCMP
 #
 $CMP IPC100N04S51R7ATMA1
@@ -779,6 +802,12 @@ $CMP LM5050-1
 D Full Featured N+1 and ORing Power Rail Controller, TSSOP-14
 K ideal-diode or-ing undervoltage overvoltage
 F http://www.ti.com/lit/ds/symlink/tps2410.pdf
+$ENDCMP
+#
+$CMP LM5060_Custom
+D High side protection controller, +5.5V to +65V operation, VSSOP-10 package
+K high-voltage mosfet-driver hot-swap
+F http://www.ti.com/lit/ds/symlink/lm5060.pdf
 $ENDCMP
 #
 $CMP LM7812
@@ -927,6 +956,10 @@ D 1.8A, 4MHz, Synchronous Step-Down DC/DC Conveter
 K LT Switch Linear
 $ENDCMP
 #
+$CMP LTC3604UD
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3604fa.pdf
+$ENDCMP
+#
 $CMP LTC3605A_UF
 D 20V, 5A Synchronous Step-Down Regulator, QFN-24
 F https://www.analog.com/media/en/technical-documentation/data-sheets/3605afg.pdf
@@ -955,6 +988,12 @@ $ENDCMP
 #
 $CMP LTC4413DD
 D Dual 2.6A, 2.5V to 5.5V Ideal Diodes in 3mmx3mm DFN
+$ENDCMP
+#
+$CMP LTC4415DHC
+D 18V Dual Input Micropower PowerPath Prioritizer
+K Ideal Diode Powerpath Priority
+F http://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf
 $ENDCMP
 #
 $CMP LTC4419DD
@@ -1318,6 +1357,11 @@ $CMP TPS25944L
 D 2.7 V-18 V, 5-A eFuse Power MUX With Multiple Protection Modes, Circuit Breaker, Latched
 $ENDCMP
 #
+$CMP TPS26600RHFT
+D TPS2660x 60-V, 2-A Industrial eFuse With Integrated Reverse Input Polarity Protection VQFN (24)
+F http://www.ti.com/lit/ds/symlink/tps2660.pdf
+$ENDCMP
+#
 $CMP TPS61230DRC
 D High Efficiency Synchronous Step Up Converters with 5-A Switches
 K Boost, Step Up, DC/DC,
@@ -1328,6 +1372,10 @@ $CMP TPS62130
 D 3A Step-Down Converter with DCS-Control, Adjustable Output Voltage, 3-17V Input Voltage, QFN-16
 K step-down dcdc
 F http://www.ti.com/lit/ds/symlink/tps62130.pdf
+$ENDCMP
+#
+$CMP TP_Pad
+D Test Point
 $ENDCMP
 #
 $CMP TVS
@@ -1352,6 +1400,11 @@ $ENDCMP
 $CMP VAN
 D power-flag symbol
 K Power Flag Symbol
+$ENDCMP
+#
+$CMP VBAT
+D Power symbol creates a global label with name "VCC"
+K power-flag
 $ENDCMP
 #
 $CMP VCC_BCKUP
