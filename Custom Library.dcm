@@ -74,6 +74,11 @@ D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
+$CMP +5V_DSP
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 $CMP +5V_ISO
 D power-flag symbol
 K Power Flag Symbol
@@ -986,6 +991,11 @@ D 2.5A Supercapacitor Backup Power Manager
 F https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4041.pdf
 $ENDCMP
 #
+$CMP LTC4151DD
+D High Voltage I2C Current and Power Monitor
+F https://www.analog.com/media/en/technical-documentation/data-sheets/4151ff.pdf
+$ENDCMP
+#
 $CMP LTC4365DDB
 D Overvoltage, Undervoltage and Reverse Supply Protection Controller, 3x2mm DFN-8 package, 50Hz/60Hz noise rejection
 K overvoltage undervoltage reverse-polarity protection
@@ -1325,6 +1335,11 @@ $ENDCMP
 $CMP TLV431
 D 1.24V Shunt Regulator
 K Shunt
+$ENDCMP
+#
+$CMP TLV6700
+D Micropower, Low Voltage, Dual Comparator with 400mV Reference
+F http://www.ti.com/lit/ds/symlink/tlv6700.pdf
 $ENDCMP
 #
 $CMP TLV809K33
