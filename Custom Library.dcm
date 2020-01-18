@@ -342,6 +342,12 @@ K Single Gate EX-OR LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
+$CMP 74LVC1G97_Power
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
+$ENDCMP
+#
 $CMP 74LVC2G06_Power
 D Dual NOT Gate w/ Open Drain, Low-Voltage CMOS
 K Dual Gate NOT Open Drain LVC CMOS
@@ -351,6 +357,12 @@ $ENDCMP
 $CMP 74LVC2G14_Power
 D Dual NOT Gate Schmitt Triggered, Low-Voltage CMOS
 K Dual Gate NOT Schmitt LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC2G17_Power
+D Dual Buffer Schmitt Triggered, Low-Voltage CMOS
+K Dual Buffer Schmitt LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
