@@ -608,6 +608,12 @@ $CMP Cap_Touch
 D Test Point
 $ENDCMP
 #
+$CMP DAC8551
+D 16-Bit, Ultralow-Glitch, Voltage-Output Digital‑to‑Analog Converter
+K DAC
+F http://www.ti.com/lit/ds/symlink/dac8551.pdf
+$ENDCMP
+#
 $CMP DPDT_SW
 D inverseur
 K switch
@@ -973,6 +979,11 @@ $CMP LTC6655
 D 0.25ppm Noise, Low Drift Precision References
 $ENDCMP
 #
+$CMP LTC6900
+D Low Power, 1kHz to 20MHz Resistor Set SOT-23 Oscillator
+F https://www.analog.com/media/en/technical-documentation/data-sheets/6900fa.pdf
+$ENDCMP
+#
 $CMP LTC6994
 D TimerBlox: Delay Block/Debouncer
 $ENDCMP
@@ -1124,6 +1135,12 @@ $ENDCMP
 #
 $CMP PIC18F2221
 D Enhanced Flash Microcontrollers with 10-Bit A/D and nanoWatt Technology
+$ENDCMP
+#
+$CMP PIC32MZ0512EFE064T-I_PT
+D 32-bit MCUs, 512KB Flash, 128 KB SRAM, with FPU, Audio and Graphics Interfaces, HS USB, Ethernet, and Advanced Analog
+K PIC32 PIC32MZ PIC 32 bit
+F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
 $ENDCMP
 #
 $CMP PIC32MZ2048EFG100_IPT
