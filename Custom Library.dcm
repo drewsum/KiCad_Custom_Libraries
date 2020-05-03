@@ -4,7 +4,15 @@ $CMP +0.825V_REF
 K POWER, PWR
 $ENDCMP
 #
-$CMP +1.2V_VFF
+$CMP +1.2V
+K POWER, PWR
+$ENDCMP
+#
+$CMP +1.2VFF
+K POWER, PWR
+$ENDCMP
+#
+$CMP +1.2V_ETH
 K POWER, PWR
 $ENDCMP
 #
@@ -20,6 +28,10 @@ $CMP +12Vin
 K POWER, PWR
 $ENDCMP
 #
+$CMP +12VinP
+K POWER, PWR
+$ENDCMP
+#
 $CMP +170
 K POWER, PWR
 $ENDCMP
@@ -28,12 +40,22 @@ $CMP +180
 K POWER, PWR
 $ENDCMP
 #
+$CMP +20V
+D Power symbol creates a global label with name "+3V3"
+K power-flag
+$ENDCMP
+#
 $CMP +24Vin
 K POWER, PWR
 $ENDCMP
 #
-$CMP +3.3V
-D Power flag
+$CMP +3.3VA_ETH
+D Power symbol creates a global label with name "+3.3VA"
+K power-flag
+$ENDCMP
+#
+$CMP +3.3VA_MZ
+D Power symbol creates a global label with name "+3.3VA"
 K power-flag
 $ENDCMP
 #
@@ -48,6 +70,11 @@ $ENDCMP
 $CMP +3.3V_SW
 D Power flag
 K power-flag
+$ENDCMP
+#
+$CMP +3.3V_USB
+D power-flag symbol
+K Power Flag Symbol
 $ENDCMP
 #
 $CMP +3V3_ALS
@@ -71,6 +98,11 @@ K Power Flag Symbol
 $ENDCMP
 #
 $CMP +5V_CHRG
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP +5V_DSP
 D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
@@ -99,13 +131,8 @@ $CMP +6.7V
 K POWER, PWR
 $ENDCMP
 #
-$CMP +60V_VAN
+$CMP +60VAN
 K POWER, PWR
-$ENDCMP
-#
-$CMP +60Van
-D power-flag symbol
-K Power Flag Symbol
 $ENDCMP
 #
 $CMP +9V_BATT
@@ -221,6 +248,12 @@ D Decoder 3 to 8
 K HC DECOD DECOD8
 $ENDCMP
 #
+$CMP 74HC4040
+D Binary Counter 12 stages (Asynchronous)
+K CMOS CNT CNT12
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT4040.pdf
+$ENDCMP
+#
 $CMP 74HC4511
 D BCD to 7 segments Driver
 K HC DECOD DECOD7
@@ -266,6 +299,12 @@ F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
 $CMP 74LVC1G08_Power
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC1G08_SON6
 D Single AND Gate, Low-Voltage CMOS
 K Single Gate AND LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
@@ -319,10 +358,70 @@ K Single D Flip-Flop D CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
+$CMP 74LVC1G80_Power
+D Single D Flip-Flop Iverted Output, Low-Voltage CMOS
+K Single D Flip-Flop CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74LVC1G86_Power
 D Single EX-OR Gate, Low-Voltage CMOS
 K Single Gate EX-OR LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74LVC1G97_Power_AND
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
+$ENDCMP
+#
+$CMP 74LVC1G97_Power_AND_INV
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
+$ENDCMP
+#
+$CMP 74LVC1G97_Power_BUF
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
+$ENDCMP
+#
+$CMP 74LVC1G97_Power_MUX
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
+$ENDCMP
+#
+$CMP 74LVC1G97_Power_NAND_INV
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
+$ENDCMP
+#
+$CMP 74LVC1G97_Power_NOR_INV
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
+$ENDCMP
+#
+$CMP 74LVC1G97_Power_NOT
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
+$ENDCMP
+#
+$CMP 74LVC1G97_Power_OR
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
+$ENDCMP
+#
+$CMP 74LVC1G97_Power_OR_INV
+D Single AND Gate, Low-Voltage CMOS
+K Single Gate AND LVC CMOS
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf
 $ENDCMP
 #
 $CMP 74LVC2G06_Power
@@ -337,6 +436,12 @@ K Dual Gate NOT Schmitt LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
+$CMP 74LVC2G17_Power
+D Dual Buffer Schmitt Triggered, Low-Voltage CMOS
+K Dual Buffer Schmitt LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74LVC2G74_Power
 D 74AUC1G74, Single D Flip-Flop, Low-Voltage CMOS
 K Single D Flip-Flop D CMOS
@@ -347,6 +452,12 @@ $CMP 74LVC3G06_Power
 D Triple NOT Gate w/ Open Drain, Low-Voltage CMOS
 K Triple Gate NOT Open Drain LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74VHC541
+D 8-bit Buffer/Line Driver 3-state outputs
+K TTL BUFFER 3State BUS
+F https://assets.nexperia.com/documents/data-sheet/74VHC_VHCT541.pdf
 $ENDCMP
 #
 $CMP A1101LLHL
@@ -645,7 +756,7 @@ D 4 Bit Dip Switch
 $ENDCMP
 #
 $CMP ECS-327KE
-D SMD CLOCK OSCILLATOR
+D Clock Oscillator CMOS Enable
 $ENDCMP
 #
 $CMP FAN5602MP5X
@@ -668,6 +779,11 @@ $ENDCMP
 $CMP FT234XD
 D Basic UART USB Bridge
 F http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT234XD.pdf
+$ENDCMP
+#
+$CMP GNDA_MZ
+D Power symbol creates a global label with name "GNDA" , analog ground
+K power-flag
 $ENDCMP
 #
 $CMP GND_ISO
@@ -694,6 +810,11 @@ $CMP ICS502
 D LOCO PLL CLOCK MULTIPLIER
 $ENDCMP
 #
+$CMP INA231A
+D High- or Low-Side Measurement, Bidirectional Current and Power Monitor With 1.8-V I2C Interface
+F http://www.ti.com/lit/ds/symlink/ina231.pdf
+$ENDCMP
+#
 $CMP IPC100N04S51R7ATMA1
 D 25A Id, 30V Vds, NexFET N-Channel Power MOSFET, 6.9mOhm Ron, Qg (typ) 7.9nC, SON8 5x6mm
 K NexFET Power MOSFET N-MOS
@@ -714,6 +835,12 @@ $CMP L4931-3.3
 D Positive 100mA 30V Linear Regulator, Fixed Output 5V, TO-92
 K Voltage Regulator 100mA Positive
 F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP LAN8720A
+D LAN8720 Ethernet PHY with RMII interface
+K ETH PHY RMII
+F http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf
 $ENDCMP
 #
 $CMP LD1117S12TR
@@ -787,6 +914,12 @@ K ideal-diode or-ing undervoltage overvoltage
 F http://www.ti.com/lit/ds/symlink/tps2410.pdf
 $ENDCMP
 #
+$CMP LM5060_Custom
+D High side protection controller, +5.5V to +65V operation, VSSOP-10 package
+K high-voltage mosfet-driver hot-swap
+F http://www.ti.com/lit/ds/symlink/lm5060.pdf
+$ENDCMP
+#
 $CMP LM7812
 D Linear Regulator +12V
 K POWER REGUL
@@ -805,6 +938,12 @@ $ENDCMP
 #
 $CMP LP2985
 D Low Noise LDO
+$ENDCMP
+#
+$CMP LP8545
+D 36-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver
+K PWM LED driver I2C
+F http://www.ti.com/lit/ds/symlink/lp8545.pdf
 $ENDCMP
 #
 $CMP LT1010
@@ -933,6 +1072,10 @@ D 1.8A, 4MHz, Synchronous Step-Down DC/DC Conveter
 K LT Switch Linear
 $ENDCMP
 #
+$CMP LTC3604UD
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3604fa.pdf
+$ENDCMP
+#
 $CMP LTC3605A_UF
 D 20V, 5A Synchronous Step-Down Regulator, QFN-24
 F https://www.analog.com/media/en/technical-documentation/data-sheets/3605afg.pdf
@@ -953,6 +1096,17 @@ D 2.5A Supercapacitor Backup Power Manager
 F https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4041.pdf
 $ENDCMP
 #
+$CMP LTC4151DD
+D High Voltage I2C Current and Power Monitor
+F https://www.analog.com/media/en/technical-documentation/data-sheets/4151ff.pdf
+$ENDCMP
+#
+$CMP LTC4316DD
+D Single I2C/SMBUS Address Translator
+K Single I2C/SMBUS Address Translator
+F https://www.analog.com/media/en/technical-documentation/data-sheets/4316fa.pdf
+$ENDCMP
+#
 $CMP LTC4365DDB
 D Overvoltage, Undervoltage and Reverse Supply Protection Controller, 3x2mm DFN-8 package, 50Hz/60Hz noise rejection
 K overvoltage undervoltage reverse-polarity protection
@@ -961,6 +1115,12 @@ $ENDCMP
 #
 $CMP LTC4413DD
 D Dual 2.6A, 2.5V to 5.5V Ideal Diodes in 3mmx3mm DFN
+$ENDCMP
+#
+$CMP LTC4415DHC
+D 18V Dual Input Micropower PowerPath Prioritizer
+K Ideal Diode Powerpath Priority
+F http://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf
 $ENDCMP
 #
 $CMP LTC4419DD
@@ -1064,6 +1224,12 @@ $CMP MCP809
 D 3 Pin Supply Voltage Supervisor
 $ENDCMP
 #
+$CMP MCP9804
+D Microchip Technology Digital Temperature Sensor DFN
+K temperature sensor I2C
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf
+$ENDCMP
+#
 $CMP MMBF170
 D 60V Vds, 0.5 A Id, N-channel MOSFET, SOT-23
 K N-Channel MOSFET
@@ -1149,7 +1315,7 @@ K PIC32 PIC32MZ PIC 32 bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
 $ENDCMP
 #
-$CMP PIC32MZ2048EFH100_IPF
+$CMP PIC32MZ2048EFH100-250I_PF-ND
 D 32-bit MCUs, 2 MB Flash, 512 KB SRAM, with FPU, Audio and Graphics Interfaces, HS USB, Ethernet, and Advanced Analog
 K PIC32 PIC32MZ PIC 32 bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
@@ -1238,6 +1404,10 @@ $CMP Si3932DV
 D Dual N channel MOSFET 30VDS 3.7A
 $ENDCMP
 #
+$CMP Si4946BEY
+D Dual NMOS transistor, 8 pin package
+$ENDCMP
+#
 $CMP SiC779
 D Integrated DrMOS Power Stage, 40A, 12VIN, PowerPAK MLP 6mm x 6mm 40
 F http://www.vishay.com/docs/67538/sic779.pdf
@@ -1288,6 +1458,11 @@ D 1.24V Shunt Regulator
 K Shunt
 $ENDCMP
 #
+$CMP TLV6700
+D Micropower, Low Voltage, Dual Comparator with 400mV Reference
+F http://www.ti.com/lit/ds/symlink/tlv6700.pdf
+$ENDCMP
+#
 $CMP TLV809K33
 D 3 Pin Supply Voltage Supervisor - 3.3V
 $ENDCMP
@@ -1335,6 +1510,11 @@ $CMP TPS25944L
 D 2.7 V-18 V, 5-A eFuse Power MUX With Multiple Protection Modes, Circuit Breaker, Latched
 $ENDCMP
 #
+$CMP TPS26600RHFT
+D TPS2660x 60-V, 2-A Industrial eFuse With Integrated Reverse Input Polarity Protection VQFN (24)
+F http://www.ti.com/lit/ds/symlink/tps2660.pdf
+$ENDCMP
+#
 $CMP TPS61230DRC
 D High Efficiency Synchronous Step Up Converters with 5-A Switches
 K Boost, Step Up, DC/DC,
@@ -1345,6 +1525,10 @@ $CMP TPS62130
 D 3A Step-Down Converter with DCS-Control, Adjustable Output Voltage, 3-17V Input Voltage, QFN-16
 K step-down dcdc
 F http://www.ti.com/lit/ds/symlink/tps62130.pdf
+$ENDCMP
+#
+$CMP TP_Pad
+D Test Point
 $ENDCMP
 #
 $CMP TVS
@@ -1371,6 +1555,11 @@ D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
+$CMP VBAT
+D Power symbol creates a global label with name "VCC"
+K power-flag
+$ENDCMP
+#
 $CMP VCC_BCKUP
 K POWER, PWR
 $ENDCMP
@@ -1386,6 +1575,11 @@ $ENDCMP
 #
 $CMP VIO
 D positive voltage power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VLED
+D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
@@ -1436,6 +1630,12 @@ $ENDCMP
 $CMP ZXGD3005
 D MOSFET Gate Driver
 K MOSFET Gate Driver
+$ENDCMP
+#
+$CMP ZXMS6004FFTA
+D Power Switch/Driver 1:1 N-Channel 1.3A 60V SOT-23F
+K N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf
 $ENDCMP
 #
 $CMP nodeMCU_ESP8266
