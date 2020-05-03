@@ -4,7 +4,15 @@ $CMP +0.825V_REF
 K POWER, PWR
 $ENDCMP
 #
+$CMP +1.2V
+K POWER, PWR
+$ENDCMP
+#
 $CMP +1.2VFF
+K POWER, PWR
+$ENDCMP
+#
+$CMP +1.2V_ETH
 K POWER, PWR
 $ENDCMP
 #
@@ -32,8 +40,23 @@ $CMP +180
 K POWER, PWR
 $ENDCMP
 #
+$CMP +20V
+D Power symbol creates a global label with name "+3V3"
+K power-flag
+$ENDCMP
+#
 $CMP +24Vin
 K POWER, PWR
+$ENDCMP
+#
+$CMP +3.3VA_ETH
+D Power symbol creates a global label with name "+3.3VA"
+K power-flag
+$ENDCMP
+#
+$CMP +3.3VA_MZ
+D Power symbol creates a global label with name "+3.3VA"
+K power-flag
 $ENDCMP
 #
 $CMP +3.3V_BCKP
@@ -47,6 +70,11 @@ $ENDCMP
 $CMP +3.3V_SW
 D Power flag
 K power-flag
+$ENDCMP
+#
+$CMP +3.3V_USB
+D power-flag symbol
+K Power Flag Symbol
 $ENDCMP
 #
 $CMP +3V3_ALS
@@ -753,6 +781,11 @@ D Basic UART USB Bridge
 F http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT234XD.pdf
 $ENDCMP
 #
+$CMP GNDA_MZ
+D Power symbol creates a global label with name "GNDA" , analog ground
+K power-flag
+$ENDCMP
+#
 $CMP GND_ISO
 D GROUND power-flag symbol
 K Power Flag Symbol
@@ -802,6 +835,12 @@ $CMP L4931-3.3
 D Positive 100mA 30V Linear Regulator, Fixed Output 5V, TO-92
 K Voltage Regulator 100mA Positive
 F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP LAN8720A
+D LAN8720 Ethernet PHY with RMII interface
+K ETH PHY RMII
+F http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf
 $ENDCMP
 #
 $CMP LD1117S12TR
@@ -899,6 +938,12 @@ $ENDCMP
 #
 $CMP LP2985
 D Low Noise LDO
+$ENDCMP
+#
+$CMP LP8545
+D 36-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver
+K PWM LED driver I2C
+F http://www.ti.com/lit/ds/symlink/lp8545.pdf
 $ENDCMP
 #
 $CMP LT1010
@@ -1270,7 +1315,7 @@ K PIC32 PIC32MZ PIC 32 bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
 $ENDCMP
 #
-$CMP PIC32MZ2048EFH100_IPF
+$CMP PIC32MZ2048EFH100-250I_PF-ND
 D 32-bit MCUs, 2 MB Flash, 512 KB SRAM, with FPU, Audio and Graphics Interfaces, HS USB, Ethernet, and Advanced Analog
 K PIC32 PIC32MZ PIC 32 bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
@@ -1357,6 +1402,10 @@ $ENDCMP
 #
 $CMP Si3932DV
 D Dual N channel MOSFET 30VDS 3.7A
+$ENDCMP
+#
+$CMP Si4946BEY
+D Dual NMOS transistor, 8 pin package
 $ENDCMP
 #
 $CMP SiC779
@@ -1529,6 +1578,11 @@ D positive voltage power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
+$CMP VLED
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 $CMP VTANK
 D power-flag symbol (holdup voltage)
 K Power Flag Symbol Holdup
@@ -1576,6 +1630,12 @@ $ENDCMP
 $CMP ZXGD3005
 D MOSFET Gate Driver
 K MOSFET Gate Driver
+$ENDCMP
+#
+$CMP ZXMS6004FFTA
+D Power Switch/Driver 1:1 N-Channel 1.3A 60V SOT-23F
+K N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf
 $ENDCMP
 #
 $CMP nodeMCU_ESP8266
