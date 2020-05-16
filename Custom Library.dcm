@@ -20,6 +20,10 @@ $CMP +1.65V_REF
 K POWER, PWR
 $ENDCMP
 #
+$CMP +1.8V
+K POWER, PWR
+$ENDCMP
+#
 $CMP +12VAC
 K POWER, PWR
 $ENDCMP
@@ -65,6 +69,11 @@ $ENDCMP
 #
 $CMP +3.3V_MNG
 K POWER, PWR
+$ENDCMP
+#
+$CMP +3.3V_POX
+D Power flag
+K power-flag
 $ENDCMP
 #
 $CMP +3.3V_SW
@@ -1525,6 +1534,18 @@ $CMP TPS62130
 D 3A Step-Down Converter with DCS-Control, Adjustable Output Voltage, 3-17V Input Voltage, QFN-16
 K step-down dcdc
 F http://www.ti.com/lit/ds/symlink/tps62130.pdf
+$ENDCMP
+#
+$CMP TPS62150
+D 3A Step-Down Converter with DCS-Control, Adjustable Output Voltage, 3-17V Input Voltage, QFN-16
+K step-down dcdc
+F https://www.ti.com/lit/ds/symlink/tps62150.pdf?&ts=1589125931316
+$ENDCMP
+#
+$CMP TPS7A91
+D 1A, High-Accuracy, Low-Noise LDO Voltage Regulator, Texas S-PDSO-N10
+K LDO voltage regulator
+F http://www.ti.com/lit/ds/symlink/tps7a91.pdf
 $ENDCMP
 #
 $CMP TP_Pad
