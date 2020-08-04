@@ -71,12 +71,22 @@ $CMP +3.3V_MNG
 K POWER, PWR
 $ENDCMP
 #
+$CMP +3.3V_PGL
+D Power symbol creates a global label with name "+3.3VA"
+K power-flag
+$ENDCMP
+#
 $CMP +3.3V_POX
 D Power flag
 K power-flag
 $ENDCMP
 #
 $CMP +3.3V_SW
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP +3.3V_TFT
 D Power flag
 K power-flag
 $ENDCMP
@@ -947,6 +957,11 @@ $ENDCMP
 #
 $CMP LP2985
 D Low Noise LDO
+$ENDCMP
+#
+$CMP LP5009
+D LP50xx 9-Channel, 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Drivers
+F https://www.ti.com/lit/ds/symlink/lp5009.pdf?ts=1596330853683
 $ENDCMP
 #
 $CMP LP8545
