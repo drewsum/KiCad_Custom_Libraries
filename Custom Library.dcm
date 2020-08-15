@@ -789,6 +789,12 @@ D Inductor
 K inductor choke coil reactor magnetic
 $ENDCMP
 #
+$CMP FDC5612
+D N-MOSFET transistor
+K transistor NMOS N-MOS N-MOSFET
+F https://www.onsemi.com/pub/Collateral/FDC5612-D.PDF
+$ENDCMP
+#
 $CMP FMMT734
 D 30V Vce, 1A Ic, PNP Darlington Transistor, TO-92
 K BC516 PNP Darlington Darl Transistor
