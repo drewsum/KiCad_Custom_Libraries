@@ -744,6 +744,12 @@ K DAC
 F http://www.ti.com/lit/ds/symlink/dac8551.pdf
 $ENDCMP
 #
+$CMP DLW5ATN501MQ2L
+D EMI 2-inductor filter, pin-connections 1-4 and 2-3
+K EMI filter common-mode choke
+F https://www.murata.com/en-us/products/productdata/8796759031838/EFLC0026.pdf
+$ENDCMP
+#
 $CMP DPDT_SW
 D inverseur
 K switch
@@ -1041,6 +1047,12 @@ $ENDCMP
 #
 $CMP LT8643S
 D 42V 6A Synchronous Step-Down Silent Switcher 2 with 2.5uA Quiescent Current
+$ENDCMP
+#
+$CMP LTC1694
+D SMBus/I2C Accelerator
+K I2C Accelerator
+F https://www.analog.com/media/en/technical-documentation/data-sheets/1694fa.pdf
 $ENDCMP
 #
 $CMP LTC2601
