@@ -20,6 +20,10 @@ $CMP +1.65V_REF
 K POWER, PWR
 $ENDCMP
 #
+$CMP +1.8V
+K POWER, PWR
+$ENDCMP
+#
 $CMP +12VAC
 K POWER, PWR
 $ENDCMP
@@ -67,7 +71,22 @@ $CMP +3.3V_MNG
 K POWER, PWR
 $ENDCMP
 #
+$CMP +3.3V_PGL
+D Power symbol creates a global label with name "+3.3VA"
+K power-flag
+$ENDCMP
+#
+$CMP +3.3V_POX
+D Power flag
+K power-flag
+$ENDCMP
+#
 $CMP +3.3V_SW
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP +3.3V_TFT
 D Power flag
 K power-flag
 $ENDCMP
@@ -770,6 +789,12 @@ D Inductor
 K inductor choke coil reactor magnetic
 $ENDCMP
 #
+$CMP FDC5612
+D N-MOSFET transistor
+K transistor NMOS N-MOS N-MOSFET
+F https://www.onsemi.com/pub/Collateral/FDC5612-D.PDF
+$ENDCMP
+#
 $CMP FMMT734
 D 30V Vce, 1A Ic, PNP Darlington Transistor, TO-92
 K BC516 PNP Darlington Darl Transistor
@@ -940,10 +965,21 @@ $CMP LP2985
 D Low Noise LDO
 $ENDCMP
 #
+$CMP LP5009
+D LP50xx 9-Channel, 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Drivers
+F https://www.ti.com/lit/ds/symlink/lp5009.pdf?ts=1596330853683
+$ENDCMP
+#
 $CMP LP8545
 D 36-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver
 K PWM LED driver I2C
 F http://www.ti.com/lit/ds/symlink/lp8545.pdf
+$ENDCMP
+#
+$CMP LPV812DGK
+D Dual operational amplifier, 8kHz GBW, 425 nA/channel quiescent, 100 fA input bias, 300 uV offset max, 1 uV/C, VSSOP-8
+K dual opamp low-power rail-to-rail
+F https://www.ti.com/lit/ds/symlink/lpv812.pdf
 $ENDCMP
 #
 $CMP LT1010
@@ -1263,6 +1299,30 @@ $CMP Nut
 D Hardware, Standoff
 $ENDCMP
 #
+$CMP OPA1692xDGK
+D Dual SoundPlus Low Power, Low Noise & Low Distortion Audio Operational Amplifiers, VSSOP-8
+K VFA opamp
+F https://www.ti.com/lit/ds/symlink/opa1692.pdf
+$ENDCMP
+#
+$CMP OPA2156xDGK
+D Dual 36V, Ultra Low Noise, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, VSSOP-8
+K dual opamp low-noise r2r
+F http://www.ti.com/lit/ds/symlink/opa2156.pdf
+$ENDCMP
+#
+$CMP OPA2196xDGK
+D Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, VSSOP-8
+K dual opamp rtor
+F http://www.ti.com/lit/ds/symlink/opa4196.pdf
+$ENDCMP
+#
+$CMP OPA2197xDGK
+D Dual 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, VSSOP-8
+K dual opamp rtor
+F http://www.ti.com/lit/ds/symlink/opa2197.pdf
+$ENDCMP
+#
 $CMP OPT3001
 D Ambient Light Sensor
 K Light Digital Ambient TI Texas
@@ -1525,6 +1585,18 @@ $CMP TPS62130
 D 3A Step-Down Converter with DCS-Control, Adjustable Output Voltage, 3-17V Input Voltage, QFN-16
 K step-down dcdc
 F http://www.ti.com/lit/ds/symlink/tps62130.pdf
+$ENDCMP
+#
+$CMP TPS62150
+D 3A Step-Down Converter with DCS-Control, Adjustable Output Voltage, 3-17V Input Voltage, QFN-16
+K step-down dcdc
+F https://www.ti.com/lit/ds/symlink/tps62150.pdf?&ts=1589125931316
+$ENDCMP
+#
+$CMP TPS7A91
+D 1A, High-Accuracy, Low-Noise LDO Voltage Regulator, Texas S-PDSO-N10
+K LDO voltage regulator
+F http://www.ti.com/lit/ds/symlink/tps7a91.pdf
 $ENDCMP
 #
 $CMP TP_Pad
