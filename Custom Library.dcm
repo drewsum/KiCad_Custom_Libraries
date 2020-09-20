@@ -976,6 +976,12 @@ K PWM LED driver I2C
 F http://www.ti.com/lit/ds/symlink/lp8545.pdf
 $ENDCMP
 #
+$CMP LPV812DGK
+D Dual operational amplifier, 8kHz GBW, 425 nA/channel quiescent, 100 fA input bias, 300 uV offset max, 1 uV/C, VSSOP-8
+K dual opamp low-power rail-to-rail
+F https://www.ti.com/lit/ds/symlink/lpv812.pdf
+$ENDCMP
+#
 $CMP LT1010
 D High speed analog Buffer
 K Buffer
@@ -1291,6 +1297,30 @@ $ENDCMP
 #
 $CMP Nut
 D Hardware, Standoff
+$ENDCMP
+#
+$CMP OPA1692xDGK
+D Dual SoundPlus Low Power, Low Noise & Low Distortion Audio Operational Amplifiers, VSSOP-8
+K VFA opamp
+F https://www.ti.com/lit/ds/symlink/opa1692.pdf
+$ENDCMP
+#
+$CMP OPA2156xDGK
+D Dual 36V, Ultra Low Noise, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, VSSOP-8
+K dual opamp low-noise r2r
+F http://www.ti.com/lit/ds/symlink/opa2156.pdf
+$ENDCMP
+#
+$CMP OPA2196xDGK
+D Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, VSSOP-8
+K dual opamp rtor
+F http://www.ti.com/lit/ds/symlink/opa4196.pdf
+$ENDCMP
+#
+$CMP OPA2197xDGK
+D Dual 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, VSSOP-8
+K dual opamp rtor
+F http://www.ti.com/lit/ds/symlink/opa2197.pdf
 $ENDCMP
 #
 $CMP OPT3001
