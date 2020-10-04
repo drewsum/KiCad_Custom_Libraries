@@ -728,6 +728,10 @@ D Cree RGB LED PLCC4
 K RGB LED
 $ENDCMP
 #
+$CMP CP2105
+F https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2105.pdf
+$ENDCMP
+#
 $CMP CP_Tant_Custom
 D Polarised capacitor
 K cap capacitor
