@@ -668,6 +668,10 @@ K AVR 8bit Microcontroller MegaAVR PicoPower
 F http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet.pdf
 $ENDCMP
 #
+$CMP ATWINC1500-MR210PB
+F https://ww1.microchip.com/downloads/en/DeviceDoc/ATWINC15x0-MR210xB-IEEE-802.11-b-g-n-SmartConnect-IoT-Module-Data-Sheet-DS70005304C.pdf
+$ENDCMP
+#
 $CMP ATtiny85-20PU
 D 8 bit Micro, Atmel
 K ATtiny, tiny, ATtiny85, AT
@@ -1505,6 +1509,12 @@ $ENDCMP
 #
 $CMP TEA1731TS
 D GreenChip SMPS control IC
+$ENDCMP
+#
+$CMP THVD1552
+D RS-485 full duplex transceiver, VSSOP-10
+K RS485 transceiver full duplex
+F https://www.ti.com/lit/ds/symlink/thvd1550.pdf?ts=1601515909374&ref_url=https%253A%252F%252Fwww.google.com%252F
 $ENDCMP
 #
 $CMP TL081
