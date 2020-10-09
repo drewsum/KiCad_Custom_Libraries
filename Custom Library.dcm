@@ -1443,6 +1443,12 @@ $CMP SCR_small
 D Thyristor
 $ENDCMP
 #
+$CMP SN74AVC2T245
+D Dual-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs
+K Level-Shifter CMOS-TTL-Translation
+F https://www.ti.com/lit/ds/symlink/sn74avc2t245.pdf?ts=1602203798059&ref_url=https%253A%252F%252Fwww.google.com%252F
+$ENDCMP
+#
 $CMP SN74LVC1G08
 D And 2 inputs
 K CMOS And2
