@@ -728,6 +728,10 @@ D Cree RGB LED PLCC4
 K RGB LED
 $ENDCMP
 #
+$CMP CP2105
+F https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2105.pdf
+$ENDCMP
+#
 $CMP CP_Tant_Custom
 D Polarised capacitor
 K cap capacitor
@@ -1385,7 +1389,7 @@ K PIC32 PIC32MZ PIC 32 bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
 $ENDCMP
 #
-$CMP PIC32MZ2048EFG100_IPT
+$CMP PIC32MZ2048EFG100_IPF
 D 32-bit MCUs, 2 MB Flash, 512 KB SRAM, with FPU, Audio and Graphics Interfaces, HS USB, Ethernet, and Advanced Analog
 K PIC32 PIC32MZ PIC 32 bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
@@ -1437,6 +1441,12 @@ $ENDCMP
 #
 $CMP SCR_small
 D Thyristor
+$ENDCMP
+#
+$CMP SN74AVC2T245
+D Dual-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs
+K Level-Shifter CMOS-TTL-Translation
+F https://www.ti.com/lit/ds/symlink/sn74avc2t245.pdf?ts=1602203798059&ref_url=https%253A%252F%252Fwww.google.com%252F
 $ENDCMP
 #
 $CMP SN74LVC1G08
@@ -1613,6 +1623,18 @@ $CMP TPS62150
 D 3A Step-Down Converter with DCS-Control, Adjustable Output Voltage, 3-17V Input Voltage, QFN-16
 K step-down dcdc
 F https://www.ti.com/lit/ds/symlink/tps62150.pdf?&ts=1589125931316
+$ENDCMP
+#
+$CMP TPS62150A
+D 3A Step-Down Converter with DCS-Control, Adjustable Output Voltage, 3-17V Input Voltage, QFN-16
+K step-down dcdc
+F https://www.ti.com/lit/ds/symlink/tps62150.pdf?&ts=1589125931316
+$ENDCMP
+#
+$CMP TPS7A7200RGTR
+D 2A, Low-Dropout Voltage Regulator, 1.5-6.5V Input, Adjustable 0.9-5V Output
+K linear regulator ldo voltage
+F http://www.ti.com/lit/ds/symlink/tps7a7200.pdf
 $ENDCMP
 #
 $CMP TPS7A91
