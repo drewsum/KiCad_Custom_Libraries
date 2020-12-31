@@ -1389,7 +1389,7 @@ K PIC32 PIC32MZ PIC 32 bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
 $ENDCMP
 #
-$CMP PIC32MZ2048EFG100_IPT
+$CMP PIC32MZ2048EFG100_IPF
 D 32-bit MCUs, 2 MB Flash, 512 KB SRAM, with FPU, Audio and Graphics Interfaces, HS USB, Ethernet, and Advanced Analog
 K PIC32 PIC32MZ PIC 32 bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001320E.pdf
